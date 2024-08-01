@@ -5,26 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JUST 쇼핑몰</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/77fba380d7.js" crossorigin="anonymous"></script>
     <style>
         .bg-black {
             background-color: #000 !important;
         }
         .navbar {
             height: 100px;
+            margin-bottom: 0;
         }
         .carousel-inner img {
             height: 300px;
             object-fit: cover;
         }
+        .carousel {
+            margin-bottom: 0;
+        }
         .content-section {
             height: 200px;
+            overflow: hidden;
+            margin: 0;
         }
         .footer {
             height: 100px;
+            display: flex;
+            align-items: center;
+            margin: 0;
+        }
+        .footer p, .footer img, .footer i {
+            margin: 0 10px;
+            font-size: 24px;
         }
         .navbar-nav .nav-item .nav-link:hover + .dropdown-menu,
         .dropdown-menu:hover {
             display: block;
+        }
+        .content-section img {
+            max-height: 180px;
+            width: auto;
+            margin: 10px;
+        }
+        .icon-container img {
+            margin-right: 10px;
+        }
+        .icon-container img:last-child {
+            margin-right: 0;
         }
     </style>
 </head>
@@ -42,7 +67,7 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="tops" role="button" data-bs-toggle="dropdown" aria-expanded="false">탑</a>
-                        <ul class="dropdown-menu" aria-labelledby="menu1">
+                        <ul class="dropdown-menu" aria-labelledby="tops">
                             <li><a class="dropdown-item" href="#">블라우스</a></li>
                             <li><a class="dropdown-item" href="#">티</a></li>
                             <li><a class="dropdown-item" href="#">셔츠</a></li>
@@ -51,7 +76,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="outers" role="button" data-bs-toggle="dropdown" aria-expanded="false">아우터</a>
-                        <ul class="dropdown-menu" aria-labelledby="menu2">
+                        <ul class="dropdown-menu" aria-labelledby="outers">
                             <li><a class="dropdown-item" href="#">자켓</a></li>
                             <li><a class="dropdown-item" href="#">코트</a></li>
                             <li><a class="dropdown-item" href="#">가디건</a></li>
@@ -60,7 +85,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="pants" role="button" data-bs-toggle="dropdown" aria-expanded="false">팬츠</a>
-                        <ul class="dropdown-menu" aria-labelledby="menu3">
+                        <ul class="dropdown-menu" aria-labelledby="pants">
                             <li><a class="dropdown-item" href="#">청바지</a></li>
                             <li><a class="dropdown-item" href="#">짧은바지</a></li>
                             <li><a class="dropdown-item" href="#">긴바지</a></li>
@@ -69,7 +94,7 @@
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="accessories" role="button" data-bs-toggle="dropdown" aria-expanded="false">악세서리</a>
-                        <ul class="dropdown-menu" aria-labelledby="menu4">
+                        <ul class="dropdown-menu" aria-labelledby="accessories">
                             <li><a class="dropdown-item" href="#">귀고리</a></li>
                             <li><a class="dropdown-item" href="#">목걸이</a></li>
                             <li><a class="dropdown-item" href="#">반지</a></li>
@@ -110,35 +135,40 @@
     </div>
 
     <!-- Main Content -->
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-4">
-                <h5>공지사항(C.1) / 갤러리(C.2)</h5>
-                <!-- Add content here -->
+    <div class="container my-0 content-section">
+        <div class="row h-100">
+            <div class="col-md-4 h-100">
             </div>
-            <div class="col-md-4">
-                <h5>배너(C.3)</h5>
-                <!-- Add content here -->
+            <div class="col-md-4 h-100">
+                <div class="d-flex align-items-center justify-content-center h-100 icon-container">
+                    <img src="images/banner.png" alt="banner" class="img-fluid">
+                </div>
             </div>
-            <div class="col-md-4">
-                <h5>바로가기(C.4)</h5>
-                <!-- Add content here -->
+            <div class="col-md-4 h-100">
+                <div class="d-flex align-items-center justify-content-center h-100 icon-container">
+                    <img src="images/cart.png" alt="Cart" class="img-fluid">
+                    <img src="images/payment.png" alt="Payment" class="img-fluid">
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="bg-black text-white text-center py-3">
+    <footer class="bg-black text-white text-center py-0 footer">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="images/logo.png" alt="Logo" height="40">
+            <div class="row w-100">
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <img src="images/logo.png" alt="Logo" height="60">
                 </div>
-                <div class="col-md-4">
-                    <p>Copyright</p>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <p>&copy; Copyright</p>
                 </div>
-                <div class="col-md-4">
-                    <p>SNS</p>
+                <div class="col-md-4 d-flex align-items-center justify-content-center">
+                    <p>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </p>
                 </div>
             </div>
         </div>
