@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST 쇼핑몰</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .bg-black {
+            background-color: #000 !important;
+        }
+        .navbar-nav .nav-item .nav-link:hover + .dropdown-menu,
+        .dropdown-menu:hover {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" alt="Logo" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu1" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU-1</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu1">
+                            <li><a class="dropdown-item" href="#">SubMenu-1</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-2</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-3</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu2" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU-2</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu2">
+                            <li><a class="dropdown-item" href="#">SubMenu-1</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-2</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-3</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu3" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU-3</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu3">
+                            <li><a class="dropdown-item" href="#">SubMenu-1</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-2</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-3</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="menu4" role="button" data-bs-toggle="dropdown" aria-expanded="false">MENU-4</a>
+                        <ul class="dropdown-menu" aria-labelledby="menu4">
+                            <li><a class="dropdown-item" href="#">SubMenu-1</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-2</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-3</a></li>
+                            <li><a class="dropdown-item" href="#">SubMenu-4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Image Slider -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/image1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/image2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/image3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>공지사항(C.1) / 갤러리(C.2)</h5>
+                <!-- Add content here -->
+            </div>
+            <div class="col-md-4">
+                <h5>배너(C.3)</h5>
+                <!-- Add content here -->
+            </div>
+            <div class="col-md-4">
+                <h5>바로가기(C.4)</h5>
+                <!-- Add content here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="images/logo.png" alt="Logo" height="40">
+                </div>
+                <div class="col-md-4">
+                    <p>Copyright</p>
+                </div>
+                <div class="col-md-4">
+                    <p>SNS</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
