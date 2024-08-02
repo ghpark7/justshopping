@@ -1,64 +1,93 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JUST 쇼핑몰</title>
+    <title>JUST Shopping</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/77fba380d7.js" crossorigin="anonymous"></script>
     <style>
         .bg-black {
             background-color: #000 !important;
         }
+
         .navbar {
             height: 100px;
             margin-bottom: 0;
         }
+
         .carousel-inner img {
             height: 300px;
             object-fit: cover;
         }
+
         .carousel {
             margin-bottom: 0;
         }
+
         .content-section {
             height: 200px;
             overflow: hidden;
             margin: 0;
         }
+
         .footer {
             height: 100px;
             display: flex;
             align-items: center;
             margin: 0;
         }
-        .footer p, .footer img, .footer i {
+
+        .footer p,
+        .footer img,
+        .footer i {
             margin: 0 10px;
             font-size: 24px;
         }
-        .navbar-nav .nav-item .nav-link:hover + .dropdown-menu,
+
+        .navbar-nav .nav-item .nav-link:hover+.dropdown-menu,
         .dropdown-menu:hover {
             display: block;
         }
+
         .content-section img {
-            max-height: 180px;
+            max-height: 150px;
             width: auto;
             margin: 10px;
         }
+
         .icon-container {
             display: flex;
             justify-content: flex-end;
             align-items: center;
             height: 100%;
         }
+
         .icon-container img {
             margin-right: 20px;
         }
+
         .icon-container img:last-child {
             margin-right: 30px;
         }
+
+        .tab-content {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .tab-content .tab-pane {
+            height: 100%;
+        }
+
+        .gallery img {
+            max-height: 150px;
+            margin-right: 10px;
+        }
     </style>
 </head>
+
 <body>
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
@@ -66,13 +95,15 @@
             <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="Logo" height="40">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="tops" role="button" data-bs-toggle="dropdown" aria-expanded="false">탑</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="tops" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">탑</a>
                         <ul class="dropdown-menu" aria-labelledby="tops">
                             <li><a class="dropdown-item" href="#">블라우스</a></li>
                             <li><a class="dropdown-item" href="#">티</a></li>
@@ -81,7 +112,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="outers" role="button" data-bs-toggle="dropdown" aria-expanded="false">아우터</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="outers" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">아우터</a>
                         <ul class="dropdown-menu" aria-labelledby="outers">
                             <li><a class="dropdown-item" href="#">자켓</a></li>
                             <li><a class="dropdown-item" href="#">코트</a></li>
@@ -90,7 +122,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="pants" role="button" data-bs-toggle="dropdown" aria-expanded="false">팬츠</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="pants" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">팬츠</a>
                         <ul class="dropdown-menu" aria-labelledby="pants">
                             <li><a class="dropdown-item" href="#">청바지</a></li>
                             <li><a class="dropdown-item" href="#">짧은바지</a></li>
@@ -99,7 +132,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="accessories" role="button" data-bs-toggle="dropdown" aria-expanded="false">악세서리</a>
+                        <a class="nav-link dropdown-toggle" href="#" id="accessories" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">악세서리</a>
                         <ul class="dropdown-menu" aria-labelledby="accessories">
                             <li><a class="dropdown-item" href="#">귀고리</a></li>
                             <li><a class="dropdown-item" href="#">목걸이</a></li>
@@ -115,9 +149,12 @@
     <!-- Image Slider -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -130,11 +167,13 @@
                 <img src="images/image3.png" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
@@ -144,6 +183,32 @@
     <div class="container my-0 content-section">
         <div class="row h-100">
             <div class="col-md-4 h-100">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="notice-tab" data-bs-toggle="tab" data-bs-target="#notice"
+                            type="button" role="tab" aria-controls="notice" aria-selected="true">공지사항</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gallery-tab" data-bs-toggle="tab" data-bs-target="#gallery"
+                            type="button" role="tab" aria-controls="gallery" aria-selected="false">갤러리</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="notice" role="tabpanel" aria-labelledby="notice-tab">
+                        <div class="p-3">
+                            <!-- 공지사항 내용 -->
+                            <p>공지사항1</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
+                        <div class="p-3 gallery d-flex justify-content-around">
+                            <!-- 갤러리 이미지 -->
+                            <img src="images/gallery1.png" alt="Gallery Image 1" class="img-fluid">
+                            <img src="images/gallery2.png" alt="Gallery Image 2" class="img-fluid">
+                            <img src="images/gallery3.png" alt="Gallery Image 3" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="col-md-4 h-100">
                 <div class="d-flex align-items-center justify-content-end h-100 icon-container">
@@ -182,4 +247,5 @@
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
