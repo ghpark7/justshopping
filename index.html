@@ -85,6 +85,26 @@
             max-height: 150px;
             margin-right: 10px;
         }
+
+        .notice-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .notice-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+
+        .notice-item p {
+            margin: 0;
+        }
+
+        .notice-date {
+            white-space: nowrap;
+        }
     </style>
 </head>
 
@@ -182,7 +202,7 @@
     <!-- Main Content -->
     <div class="container my-0 content-section">
         <div class="row h-100">
-            <div class="col-md-4 h-100">
+            <div class="col-md-5 h-100">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="notice-tab" data-bs-toggle="tab" data-bs-target="#notice"
@@ -197,7 +217,32 @@
                     <div class="tab-pane fade show active" id="notice" role="tabpanel" aria-labelledby="notice-tab">
                         <div class="p-3">
                             <!-- 공지사항 내용 -->
-                            <p>공지사항1</p>
+                            <ul class="notice-list">
+                                <li class="notice-item">
+                                    <p>에스크로 서비스 변경 약관을 확인하세요...</p>
+                                    <p class="notice-date">2019-10-10</p>
+                                </li>
+                                <li class="notice-item">
+                                    <p>배송 택배사 변경 및 배송방식 변경에 관한 공지...</p>
+                                    <p class="notice-date">2019-09-27</p>
+                                </li>
+                                <li class="notice-item">
+                                    <p>여름 이월상품 정리 세일 안내</p>
+                                    <p class="notice-date">2019-09-07</p>
+                                </li>
+                                <li class="notice-item">
+                                    <p>여름 바캉스 상품 정리 세일 안내</p>
+                                    <p class="notice-date">2019-08-24</p>
+                                </li>
+                                <li class="notice-item">
+                                    <p>반품 및 교환 조건 변경 공지</p>
+                                    <p class="notice-date">2019-07-27</p>
+                                </li>
+                                <li class="notice-item">
+                                    <p>상품별 사이즈표 보는 방법과 치수 공지</p>
+                                    <p class="notice-date">2019-05-25</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
@@ -210,16 +255,14 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 h-100">
-                <div class="d-flex align-items-center justify-content-end h-100 icon-container">
+            <div class="col-md-3 h-100 icon-section">
+                <div class="icon-container">
                     <img src="images/banner.png" alt="banner" class="img-fluid">
                 </div>
             </div>
-            <div class="col-md-4 h-100">
-                <div class="d-flex align-items-center justify-content-end h-100 icon-container">
-                    <img src="images/cart.png" alt="Cart" class="img-fluid">
-                    <img src="images/payment.png" alt="Payment" class="img-fluid">
-                </div>
+            <div class="col-md-4 h-100 icon-container">
+                <img src="images/cart.png" alt="Cart" class="img-fluid">
+                <img src="images/payment.png" alt="Payment" class="img-fluid">
             </div>
         </div>
     </div>
