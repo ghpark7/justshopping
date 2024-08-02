@@ -105,11 +105,30 @@
         .notice-date {
             white-space: nowrap;
         }
+        .modal-header {
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #dee2e6;
+        }
+        .modal-body {
+            background-color: #fff;
+            padding: 1rem;
+        }
+        .modal-footer {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1rem;
+            border-top: 1px solid #dee2e6;
+        }
+        .close-btn {
+            border: 1px solid #dee2e6;
+            padding: 0.5rem 1rem;
+            background-color: #f8f9fa;
+            cursor: pointer;
+        }
     </style>
 </head>
 
 <body>
-    <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container">
             <a class="navbar-brand" href="#">
@@ -166,7 +185,6 @@
         </div>
     </nav>
 
-    <!-- Image Slider -->
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -199,7 +217,6 @@
         </button>
     </div>
 
-    <!-- Main Content -->
     <div class="container my-0 content-section">
         <div class="row h-100">
             <div class="col-md-5 h-100">
@@ -216,41 +233,27 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="notice" role="tabpanel" aria-labelledby="notice-tab">
                         <div class="p-3">
-                            <!-- 공지사항 내용 -->
                             <ul class="notice-list">
                                 <li class="notice-item">
-                                    <p>에스크로 서비스 변경 약관을 확인하세요...</p>
-                                    <p class="notice-date">2019-10-10</p>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#noticeModal1">에스크로 서비스 변경 약관을 확인하세요...</a>
+                                    <p class="notice-date">2024-07-15</p>
                                 </li>
                                 <li class="notice-item">
-                                    <p>배송 택배사 변경 및 배송방식 변경에 관한 공지...</p>
-                                    <p class="notice-date">2019-09-27</p>
+                                    <p>배송 택배사 변경 및 배송방식 변경에 관한 공지</p>
+                                    <p class="notice-date">2024-06-03</p>
                                 </li>
                                 <li class="notice-item">
-                                    <p>여름 이월상품 정리 세일 안내</p>
-                                    <p class="notice-date">2019-09-07</p>
-                                </li>
-                                <li class="notice-item">
-                                    <p>여름 바캉스 상품 정리 세일 안내</p>
-                                    <p class="notice-date">2019-08-24</p>
-                                </li>
-                                <li class="notice-item">
-                                    <p>반품 및 교환 조건 변경 공지</p>
-                                    <p class="notice-date">2019-07-27</p>
-                                </li>
-                                <li class="notice-item">
-                                    <p>상품별 사이즈표 보는 방법과 치수 공지</p>
-                                    <p class="notice-date">2019-05-25</p>
+                                    <p>겨울 이월상품 정리 세일 안내</p>
+                                    <p class="notice-date">2023-12-25</p>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="gallery" role="tabpanel" aria-labelledby="gallery-tab">
                         <div class="p-3 gallery d-flex justify-content-around">
-                            <!-- 갤러리 이미지 -->
-                            <img src="images/gallery1.png" alt="Gallery Image 1" class="img-fluid">
-                            <img src="images/gallery2.png" alt="Gallery Image 2" class="img-fluid">
-                            <img src="images/gallery3.png" alt="Gallery Image 3" class="img-fluid">
+                            <img src="images/shirt1.png" alt="Shirt Image 1" class="img-fluid">
+                            <img src="images/shirt2.png" alt="Shirt Image 2" class="img-fluid">
+                            <img src="images/shirt3.png" alt="Shirt Image 3" class="img-fluid">
                         </div>
                     </div>
                 </div>
@@ -267,7 +270,28 @@
         </div>
     </div>
 
-    <!-- Footer -->
+    <div class="modal fade" id="noticeModal1" tabindex="-1" aria-labelledby="noticeModal1Label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="noticeModal1Label">에스크로 서비스 변경 약관을 확인하세요</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    에스크로 서비스 변경 약관의 내용을 확인하세요. 자세한 내용은 아래와 같습니다.
+                    <ul>
+                        <li>변경 내용 1</li>
+                        <li>변경 내용 2</li>
+                        <li>변경 내용 3</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="close-btn" data-bs-dismiss="modal">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer class="bg-black text-white text-center py-0 footer">
         <div class="container">
             <div class="row w-100">
